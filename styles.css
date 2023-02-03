@@ -8,6 +8,10 @@ body{
     background-color: skyblue;
 }
 
+.container {
+  width: 330px;
+}
+
 h1{
     font-size: 3rem;
     color: #5d5d5d;
