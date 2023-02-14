@@ -9,13 +9,18 @@ body{
 }
 
 .container {
-  width: 330px;
+    width: 330px;
+    padding: 20px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    background: #fff;
+    border-radius: 10px;
 }
 
 h1{
-    font-size: 3rem;
     color: #5d5d5d;
-    text-align: center;
 }
 
 .button {
@@ -23,6 +28,11 @@ h1{
     box-shadow: 0px 10px 14px -7px #276873;
     text-shadow: 0px 1px 0px #3d768a;
     background:linear-gradient(#599bb3, #408c99);
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    border: none;
+    width: 100px;
 }
   
 .button:hover {
