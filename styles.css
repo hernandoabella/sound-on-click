@@ -15,37 +15,31 @@ body {
   transform: translate(-50%, -50%);
 }
 
-button {
-  border: none;
+.button {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
   color: #fff;
-  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
-  border-radius: 20px;
-  background-size: 100% auto;
-  font-family: inherit;
-  font-size: 17px;
-  padding: 0.6em 1.5em;
+  background-image: linear-gradient(to bottom right, #00c6ff, #0072ff);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px #0072ff;
+  transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
 
-button:hover {
-  background-position: right center;
-  background-size: 200% auto;
-  -webkit-animation: pulse 2s infinite;
-  animation: pulso 1.5s infinite;
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #0072ff;
 }
 
-@keyframes pulso {
-  0% {
-    box-shadow: 0 0 0 0 #05bada66;
-  }
-
-  70% {
-    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
-  }
+.button:active {
+  transform: translateY(0px);
+  box-shadow: none;
+  background-image: linear-gradient(to bottom right, #0072ff, #00c6ff);
 }
 
 .button.clicked i {
@@ -60,7 +54,7 @@ button:hover {
     }
     10%,
     40% {
-        transform: rotate(10deg);
+        transform: rotate(20deg);
     }
     40%,
     60% {
@@ -68,7 +62,7 @@ button:hover {
     }
     60%,
     90% {
-        transform: rotate(-10deg);
+        transform: rotate(-20deg);
     }
 
 }
