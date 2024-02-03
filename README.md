@@ -1,1 +1,1 @@
-# sound-onclick
+# sound-on-click
